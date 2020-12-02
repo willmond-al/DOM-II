@@ -25,6 +25,21 @@ mainImage2.addEventListener('click', function(event){
 
 document.addEventListener('keydown', function(event){
     if(event.key === 'b'){
-        console.log('hello')
+        event.target.style.backgroundColor = "blue"
+    } else if (event.key === 'r') {
+        event.target.style.backgroundColor = "red"
+    } else {
+        event.target.style.backgroundColor = ""
     }
 })
+
+const logoHeading = document.querySelector('h1')
+
+window.addEventListener('load', function(event){
+    logoHeading.textContent = "WELCOME TO..."
+    setTimeout(() => {
+        logoHeading.textContent = "Fun Bus"
+    }, 1500);
+})
+
+
