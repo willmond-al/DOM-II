@@ -42,4 +42,13 @@ window.addEventListener('load', function(event){
     }, 1500);
 })
 
+const topImage = document.querySelector('.intro img')
+
+topImage.addEventListener('dblclick', function(event){
+    event.target.src = 'https://www.azutura.com/media/catalog/product/cache/47/image/650x/040ec09b1e35df139433887a97daa66f/W/S/WS-42696_WP.jpg'
+    // setTimeout(() => {
+    //  event.target.src = 'img/fun-bus.jpg'   
+    // }, 1000);
+})
+
 
